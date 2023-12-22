@@ -1,78 +1,36 @@
 body {
-    background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
-    background-size: 400% 400%;
-  }
-  
-  @keyframes gradientAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  /* Additional styles for your content */
-  #container {
-    max-width: 800px;
-    margin: 0 auto;
+    /* Dark gradient for the body */
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('your_background_image_url');
+    background-size: cover;
+    color: white;
+}
+
+#container {
+    /* Making container as an island */
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5); /* Transparent white */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInSlide 1s ease-in-out forwards;
-  }
-  
-  @keyframes fadeInSlide {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  header {
-    background-color: rgba(255, 255, 255, 0.5); /* Transparent white */
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#container:hover {
+    /* Cool transition effect when hover */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+header, section {
+    /* Making header and section as islands */
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 15px;
     padding: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5); /* Transparent white */
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  nav li {
-    margin: 0 10px;
-  }
-  
-  #content {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5); /* Transparent white */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.5); /* Transparent white */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
-  
+    margin: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover, section:hover {
+    /* Cool transition effect when hover */
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.5);
+}
